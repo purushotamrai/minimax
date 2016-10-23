@@ -1,0 +1,22 @@
+name: MiniMax Theme
+type: theme
+description: Features a simple, lightweight design, solid HTML5 and CSS3 code, and full responsive support for desktop, tablet, and mobile displays.
+core: 8.x
+screenshot: images/minimax.png
+base theme: classy
+# Regions
+regions:
+  header: 'Header'
+  highlighted: 'Highlighted'
+  breadcrumb: 'Breadcrumb'
+  featured: 'Featured'
+  sidebar_first: 'Sidebar First'
+  content: 'Content'
+  sidebar_second: 'Sidebar Second'
+  bottom_left: 'Bottom Left'
+  bottom_right: 'Bottom Right'
+  footer: 'Footer'
+  footer_secondary: 'Footer Secondary'
+  copyright: 'Copyright'
+libraries:
+  - minimax/global-styling
