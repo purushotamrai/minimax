@@ -1285,20 +1285,29 @@
 				background-color: #007b9d;
 				height: 86px;
 			}
-
+				#header a.site-logo img{
+					padding: 10px 2px;
+					height: 86px;
+					box-sizing: border-box;
+				}
 				#header h1 {
-					position: absolute;
-					left: 40px;
+					display: inline;
 					top: 0;
 					color: #fff;
-					font-size: 2.4em;
+					font-size: 3.4em;
 					letter-spacing: -2px;
 					line-height: 86px;
+					vertical-align: bottom;
+					text-transform: uppercase;
 				}
 
-					#header h1 a {
+					#header a {
 						color: #fff;
 						text-decoration: none;
+					}
+
+					#header ul.contextual-links a{
+						color: #000000;
 					}
 
 				#header nav {
