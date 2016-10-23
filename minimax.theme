@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Minimax theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ *
+ * Adds body classes if certain regions have content.
+ */
+function minimax_preprocess_html(&$variables) {
+  // Add information about the number of sidebars.
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $variables['page']['content']['attributes']['class']['layout'] = '6u';
+  }
+  elseif (!empty($variables['page']['sidebar_first']) || !empty($variables['page']['sidebar_second'])) {
+    $variables['page']['content']['attributes']['class']['layout'] = '9u';
+  }
+  else {
+    $variables['page']['content']['attributes']['class']['layout'] = '12u';
+  }
+}
